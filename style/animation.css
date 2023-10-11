@@ -1,0 +1,90 @@
+.logo:hover img {
+    animation: logo-animation 0.7s ease-in-out;
+}
+@keyframes logo-animation {
+    0% {
+        transform: rotate(0deg) translateY(0);
+    }
+    100% {
+        transform: rotate(360deg) translateY(0px);
+    }
+}
+
+@keyframes h1 {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 5000px 500px;
+    }
+}
+
+.front-img{
+	animation: fadeOut 3s ease-in-out forwards;
+ 	width: 36%;
+}
+@keyframes fadeOut {
+	0% {
+	  opacity: 1;
+	}
+	100% {
+	  opacity: 0;
+	}
+}
+
+@keyframes disappear {
+	0% {
+	  opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+	  opacity: 0;
+	}
+}
+
+.slide-l {
+	animation: slide-l 1s linear;
+}
+@keyframes slide-l {
+	0% {
+	  transform: translateX(-100%);
+	}
+	100% {
+	  transform: translateX(0);
+	}
+}
+
+.slide-r {
+	animation: slide-r 1s linear;
+}
+@keyframes slide-r {
+	0% {
+	  transform: translateX(100%);
+	}
+	100% {
+	  transform: translateX(0);
+	}
+}
+
+@keyframes flicker-lite {
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(0.9);
+		opacity: 0.9;
+	}
+}
+@keyframes flicker {
+	0% {
+		transform: scale(1.2);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(0.8);
+		opacity: 0.5;
+	}
+}
