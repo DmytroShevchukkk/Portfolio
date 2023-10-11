@@ -6,10 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
   
   nuvBar.addEventListener('click', function() {
       dropdownMenu.classList.toggle('show');
+      let dot = document.location.pathname.includes("ua")? "../" : "./";
       if (dropdownMenu.classList.contains('show')) {
-          imgElement.src = '../img/nuv-bar-closed.svg';
+          imgElement.src = `${dot}img/nuv-bar-closed.svg`;
       } else {
-          imgElement.src = '../img/nuv-bar.svg';
+          imgElement.src = `${dot}img/nuv-bar.svg`;
       }
   });
 
