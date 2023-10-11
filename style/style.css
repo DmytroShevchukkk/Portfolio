@@ -157,6 +157,13 @@ header {
 	opacity: 1;
 }
 
+.ua-h{
+	margin-top: 3px;
+}
+.ua-switch{
+	padding: 2px;
+}
+
 .nuv-bar{
 	display: none;
 }
@@ -316,7 +323,7 @@ header {
 
 /*projects*/
 .projects{
-	margin: 3% 7% 5%;
+	margin: 5% 7%;
 }
 .projects > h2{
 	color: var(--gray);
@@ -387,7 +394,7 @@ header {
 /*experience*/
 .experience{
 	background-color: var(--gray);
-	padding: 3% 7% 5%;
+	padding: 5% 7% 5%;
 	overflow: hidden;
 }
 .experience > h2{
@@ -482,7 +489,7 @@ header {
 	background-color: var(--gray);
 	background-image: url(../img/interests.png);
 	background-repeat: no-repeat;
-	padding: 0 7% 5%;
+	padding: 5% 7%;
 	background-position: 90% 80%;
 	background-size: 35%;
 }

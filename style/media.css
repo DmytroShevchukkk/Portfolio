@@ -171,6 +171,10 @@
 	.interests-article{
 		width: 65%;
 	}
+	.ua{
+		padding-top: 12px;
+		opacity: 0.8;
+	}
 }
 /*600<800*/
 @media(max-width:800px){

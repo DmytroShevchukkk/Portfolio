@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
   nuvBar.addEventListener('click', function() {
       dropdownMenu.classList.toggle('show');
       if (dropdownMenu.classList.contains('show')) {
-          imgElement.src = './img/nuv-bar-closed.svg';
+          imgElement.src = '../img/nuv-bar-closed.svg';
       } else {
-          imgElement.src = './img/nuv-bar.svg';
+          imgElement.src = '../img/nuv-bar.svg';
       }
   });
 
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
 
   
-  // Викликати функцію одразу та при зміні розміру вікна
+  // adaptiv
   setSlideCount();
   window.addEventListener('resize', setSlideCount);
 
@@ -110,5 +110,19 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   }
+
+  //scroll
+  const smoothLinks = document.querySelectorAll("a[href^='#']");
+  for (let smoothLink of smoothLinks) {
+      smoothLink.addEventListener("click", function (e) {
+          e.preventDefault();
+          const id = smoothLink.getAttribute("href");
+  
+          document.querySelector(id).scrollIntoView({
+              behavior: "smooth",
+              block: "start"
+          });
+      });
+  };
 
 });
